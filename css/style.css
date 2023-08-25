@@ -1,0 +1,159 @@
+/* DEFINIMOS TEMPORALEMNTE PALETA DE COLORES, QUITAR ESTA SECCION AL FINAL */
+#PALETA_DE_COLORES {
+    color: #8C0375 #C004D9 #9303A6 #5D04D9 #03318C;
+  }
+  
+  
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #f5f7fa;
+    color: black;
+  
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 90px;
+    background: white;
+  
+    position: fixed;
+    width: 100%;
+  
+    box-shadow: 0 6px 8px rgba(0,0,0, 0.10);
+  }
+  
+  #logo,
+  #contacto {
+    height: 55px;
+    width: 55px;
+  
+    display: flex;
+    margin: 10px;
+  }
+  
+  #logo,
+  #contacto > img {
+    width: auto;
+    padding: 5px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-size: 1.25rem;
+  }
+  
+  nav ul {
+    list-style: none;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    padding: 1rem 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #34495e;
+    font-weight: 600;
+  }
+  
+  nav li:hover,
+  #contacto:hover {
+    background-color: #f5f7fa;
+    border-radius: 8px;
+  }
+  
+  section {
+    height: 100vh;
+    scroll-margin-top:  90px;
+    padding: 45px 90px;
+    border: 1px dashed #34495e;
+  }
+  
+  section > h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-bottom: 5px solid #34495e;
+    margin-bottom: 2rem;
+    color: #34495e;
+  }
+  
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background: url("../img/home.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+  
+    height: 100vh;
+  }
+  
+  .home_banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  
+    background-color: #34495e;
+    opacity: 0.9;
+    padding: 3rem;
+  }
+  
+  footer {
+    background: #3498db;
+    height: 50vh;
+  }
+  
+  #btn-ir-arriba {
+    cursor: pointer;
+    display: none;
+  
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  
+    background: #34495e;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+  
+    box-shadow: 0px 12px 7px rgba(0,0,0,.1);
+    transition: 300ms ease;
+  
+  }
+  
+  #btn-ir-arriba:hover{
+    background: hsl(210, 29%, 60%);
+    transform: translateY(-0.5rem);
+  }
+  
+  #btn-ir-arriba svg {
+    stroke: white;
+    stroke-width: 3px;
+    width: 25px;
+    fill: none;
+  }
