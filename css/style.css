@@ -81,6 +81,28 @@
     border-radius: 8px;
   }
   
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
+    max-width: 100%;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+  }
+
+  div > #JuegoPopular{
+    background: #1462A6;
+  }
+
+  div > #Ranking{
+    background: #032973;
+  }
+
   section {
     height: 100vh;
     scroll-margin-bottom:  90px;
@@ -91,16 +113,17 @@
   section > h1{
     text-transform: uppercase;
     font-size: 2rem;
-    border-bottom: 5px solid #1462A6;
+    border-bottom: 5px solid #010626;
     margin-bottom: 2rem;
-    color: #1E82D9;
+    color: #010626;
   }
+
 
 .rank-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 300px;
+  width: 550px;
 }
 
 .rank-item {
@@ -150,6 +173,15 @@
   }
 }
 
+@keyframes highlight2 {
+  0%, 100% {
+    background-color: rgba(255, 38, 0, 0.541);
+  }
+  50% {
+    background-color: rgba(133, 32, 7, 0.534);
+  }
+}
+
 /* Aplicar animación de entrada a cada elemento */
 .rank-item {
   animation: fadeIn 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -159,6 +191,11 @@
 .rank-item.active {
   animation: highlight 2s infinite;
   background-color: rgba(255, 223, 0, 0.3);
+}
+
+.rank-item.active2 {
+  animation: highlight2 2s infinite;
+  background-color: rgba(255, 30, 0, 0.493);
 }
 
   
@@ -193,6 +230,43 @@
     height: 50vh;
   }
   
+  .container {
+    max-width: 800px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #010626;
+   
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #010626;
+    border-radius: 10px;
+  }
+  textarea {
+    resize: vertical;
+  }
+  button {
+    height: 30px;
+    width: 100px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
   #btn-ir-arriba {
     cursor: pointer;
     display: none;
