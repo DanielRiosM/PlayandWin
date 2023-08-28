@@ -96,22 +96,16 @@
   }
 
  
-  div > #JuegoPopular{
-    background: #1462A6;
-  }
-
-  div > #Ranking{
-    background: #032973;
-  }
+ 
 
   section {
-    height: 100vh;
     scroll-margin-bottom:  90px;
     padding: 45px 90px;
     border: 1px dashed #34495e;
   }
   
   section > h1{
+    
     text-transform: uppercase;
     font-size: 2rem;
     border-bottom: 5px solid #010626;
@@ -119,6 +113,7 @@
     color: #010626;
   }
 
+ 
   main{
     padding-top: 90px;
   }
@@ -148,7 +143,7 @@
 .rank-number {
   font-weight: bold;
   margin-right: 10px;
-  color: #555;
+  color: #fff;
 }
 
 .rank-name {
@@ -186,6 +181,15 @@
   }
 }
 
+@keyframes highlight3 {
+  0%, 100% {
+    background-color: rgba(48, 235, 42, 0.541);
+  }
+  50% {
+    background-color: rgba(89, 150, 87, 0.534);
+  }
+}
+
 /* Aplicar animación de entrada a cada elemento */
 .rank-item {
   animation: fadeIn 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -200,6 +204,11 @@
 .rank-item.active2 {
   animation: highlight2 2s infinite;
   background-color: rgba(255, 30, 0, 0.493);
+}
+
+.rank-item.active3 {
+  animation: highlight3 2s infinite;
+  background-color: rgba(132, 224, 108, 0.493);
 }
 
   section#home{
@@ -222,7 +231,8 @@
   }
   
   .home_banner{
-
+    margin-top: 90px;
+    margin-bottom: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -230,14 +240,12 @@
     gap: 1rem;
     
     background-color: #010626;
-    opacity: 0.6;
     padding: 3rem;
 
   }
   
   footer {
     background: #082040;
-    height: 50vh;
   }
   
   .container {
