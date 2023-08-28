@@ -95,6 +95,7 @@
     height: 70%;
   }
 
+ 
   div > #JuegoPopular{
     background: #1462A6;
   }
@@ -118,6 +119,9 @@
     color: #010626;
   }
 
+  main{
+    padding-top: 90px;
+  }
 
 .rank-list {
   list-style: none;
@@ -198,7 +202,11 @@
   background-color: rgba(255, 30, 0, 0.493);
 }
 
-  
+  section#home{
+    padding: 45px 90px;
+    scroll-margin-top: 90px;
+  }
+
   #home {
     display: flex;
     flex-direction:column ;
@@ -209,20 +217,22 @@
     background-size: cover;
     text-transform: uppercase;
     color: white;
-  
+    
     height: 100vh;
   }
   
   .home_banner{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-  
+    
     background-color: #010626;
     opacity: 0.6;
     padding: 3rem;
+
   }
   
   footer {
@@ -234,10 +244,14 @@
     max-width: 800px;
     margin: 10px;
     padding: 10px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #010626;
+    
+    display:list-item;
+    flex-direction: column;
+    align-items: center;
+
+    
+    
+    color: #1462A6;
    
   }
   .form-group {
