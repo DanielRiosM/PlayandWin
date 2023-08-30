@@ -1,4 +1,8 @@
-console.log('hola');
+var tabs = document.querySelectorAll(".lboard_tabs ul li");
+var today = document.querySelector(".today");
+var month = document.querySelector(".month");
+var year = document.querySelector(".year");
+var items = document.querySelectorAll(".lboard_item");
 
 function mostrarMensajeInicial(){
 
