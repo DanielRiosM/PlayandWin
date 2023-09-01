@@ -192,6 +192,60 @@
 	border-bottom-right-radius: 0px;
 }
 
+.comentarios-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.caja{
+  background: #f5f7fa;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  border: .1rem solid rgba(0,0,0, 0.2);
+  box-shadow: 0.5rem 1rem rgba(0,0,0, 0.1);
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+}
+
+.fa-gamepad{
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 4rem;
+  color: #1E82D9;
+  opacity: .3;
+}
+
+.usuario img{
+  border-radius: 50%;
+  object-fit: cover;
+  height:8rem;
+  width: 8rem;
+  margin-top: 2rem;
+}
+
+.usuario h3{
+  color: #010626;
+  font-size: 2rem;
+}
+
+.heart i{
+  color: #1E82D9;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+
+}
+
+.comentarios{
+  color: #010626;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
   .video-container{
     display: flex;
  }
