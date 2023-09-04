@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <script src="./js/main.js"></script>
+  <script src="./js/main.js" defer></script>
   <title>Play&Win</title>
 </head>
 <body>
@@ -24,6 +24,7 @@
         <li><a href="#Ranking">Ranking</a></li>
         <li><a href="#Comentarios">Comentarios y reseñas</a></li>
         <li><a href="#JuegoPopular">Lo mas popular de la semana</a></li>
+        <li><a href="#Evento">Evento</a></li>
       </ul>
 
     </nav>
@@ -63,20 +64,92 @@
             <div class="lboard_tabs">
               <div class="tabs">
                 <ul>
-                  <li data-li="today">Top</li>
-                  
+                  <li class="active" data-li="top">Top</li>
+                  <li data-li="today">Dia</li>
                 </ul>
               </div>
             </div>
         
             <div class="lboard_wrap">
-              <div class="lboard_item" style="display: block;">
+              <div class="lboard_item top" style="display: block;">
                 <div class="lboard_mem">
                   <div class="img">
                     <img src="./img/minecraft_logo_icon_168974.png" alt="picture_2">
                   </div>
                   <div class="name_bar">
                     <p><span>1.</span> Minecraft</p>
+                    <div class="bar_wrap">
+                      <div class="inner_bar" style="width: 95%"></div>
+                    </div>
+                  </div>
+                  <div class="points">
+                    1195 points
+                  </div>
+                </div>
+                <div class="lboard_mem">
+                  <div class="img">
+                    <img src="./img/elden.webp" alt="picture_3">
+                  </div>
+                  <div class="name_bar">
+                    <p><span>2.</span>Elden Ring</p>
+                    <div class="bar_wrap">
+                      <div class="inner_bar" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <div class="points">
+                    1185 points
+                  </div>
+                </div>
+                <div class="lboard_mem">
+                  <div class="img">
+                    <img src="./img/God-of-War-Ragnarok-Icon-Logo-Vector.svg-.png" alt="picture_1">
+                  </div>
+                  <div class="name_bar">
+                    <p><span>3.</span>God Of War</p>
+                    <div class="bar_wrap">
+                      <div class="inner_bar" style="width: 70%;"></div>
+                    </div>
+                  </div>
+                  <div class="points">
+                    1160 points
+                  </div>
+                </div>
+                <div class="lboard_mem">
+                  <div class="img">
+                    <img src="./img/fortnite-logo-0.png" alt="picture_5">
+                  </div>
+                  <div class="name_bar">
+                    <p><span>4.</span>Fornite</p>
+                    <div class="bar_wrap">
+                      <div class="inner_bar" style="width: 50%"></div>
+                    </div>
+                  </div>
+                  <div class="points">
+                    1130 points
+                  </div>
+                </div>
+                <div class="lboard_mem">
+                  <div class="img">
+                    <img src="./img/Trifuerza.webp" alt="picture_4">
+                  </div>
+                  <div class="name_bar">
+                    <p><span>5.</span>The Legend of Zelda</p>
+                    <div class="bar_wrap">
+                      <div class="inner_bar" style="width: 30%"></div>
+                    </div>
+                  </div>
+                  <div class="points">
+                    1110 points
+                  </div>
+                </div>
+              </div>
+              <div class="lboard_item today" style="display: block;">
+                <div class="lboard_mem">
+                  <div class="img">
+                    <img src="./img/minecraft_logo_icon_168974.png" alt="picture_2">
+                  </div>
+                  <div class="name_bar">
+                    <p><span>1.</span> Mine</p>
                     <div class="bar_wrap">
                       <div class="inner_bar" style="width: 95%"></div>
                     </div>
@@ -194,6 +267,38 @@
             <p>나는 프로 게이머이기 때문에 이 비디오 게임은 나에게 아무 것도 아닙니다. 왜냐하면 처음 몇 분 안에 2시간 이내에 통과할 수 있는 방법을 찾았기 때문입니다.</p> 
           </div>
         </div>
+      </div>
+    </section >
+    <section id="Evento">
+      <h1>PROXIMOS EVENTOS</h1>
+      <div class="evento-container">
+        
+        <table>
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Nombre</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td>World LOL</td>
+              <td>12/11/2023</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>World Fornite</td>
+              <td>10/09/2023</td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td>Gamer Summer Fest</td>
+              <td>09/05/2023</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
     <section id="JuegoPopular">

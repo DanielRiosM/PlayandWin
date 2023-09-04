@@ -1,7 +1,6 @@
 var tabs = document.querySelectorAll(".lboard_tabs ul li");
+var top = document.querySelector(".top");
 var today = document.querySelector(".today");
-var month = document.querySelector(".month");
-var year = document.querySelector(".year");
 var items = document.querySelectorAll(".lboard_item");
 
 function mostrarMensajeInicial(){
@@ -31,4 +30,28 @@ document.addEventListener("DOMContentLoaded",() => {
             behavior: 'smooth'
         })
     })
+})
+
+tabs.forEach(function(tab){
+	tab.addEventListener("click", function(){
+		var currenttab = tab.getAttribute("data-li");
+		
+		tabs.forEach(function(tab){
+			tab.classList.remove("active");
+		})
+
+		tab.classList.add("active");
+
+		items.forEach(function(item){
+			item.style.display = "none";
+		})
+
+		if(currenttab == "top"){
+			top.style.display = "block";
+		}
+		else{
+			today.style.display = "block";
+		}
+
+	})
 })
