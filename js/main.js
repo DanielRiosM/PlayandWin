@@ -1,6 +1,6 @@
 var tabs = document.querySelectorAll(".lboard_tabs ul li");
-var top = document.querySelector(".top");
 var today = document.querySelector(".today");
+var mejores = document.querySelector(".mejores");
 var items = document.querySelectorAll(".lboard_item");
 
 function mostrarMensajeInicial(){
@@ -46,11 +46,11 @@ tabs.forEach(function(tab){
 			item.style.display = "none";
 		})
 
-		if(currenttab == "top"){
-			top.style.display = "block";
+		if(currenttab == "today"){
+			today.style.display = "block";
 		}
 		else{
-			today.style.display = "block";
+            mejores.style.display = "block";
 		}
 
 	})
