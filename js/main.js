@@ -2,6 +2,13 @@ var tabs = document.querySelectorAll(".lboard_tabs ul li");
 var today = document.querySelector(".today");
 var mejores = document.querySelector(".mejores");
 var items = document.querySelectorAll(".lboard_item");
+const hamburguer = document.querySelector(".hamburguer");
+const navLinks = document.querySelector(".nav-links");
+
+hamburguer.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
 
 function mostrarMensajeInicial(){
 
